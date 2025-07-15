@@ -1,0 +1,315 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+.main-header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+.main-header h1 {
+    float: left;
+    margin: 0;
+}
+
+.main-header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.main-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.main-header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.main-header a:hover {
+    color: #77aaff;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #77aaff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #5588cc;
+}
+
+/* Banner Section */
+.banner {
+    min-height: 400px;
+    background: url('https://via.placeholder.com/1200x400/333333/FFFFFF?text=Book+Store+Banner') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Featured Books Section */
+.featured-books, .special-offers, .book-selection, .cart-display, .about-developer {
+    padding: 40px 0;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.featured-books h2, .special-offers h2, .book-selection h2, .cart-display h2, .about-developer h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.book-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.book-item h3 {
+    margin: 10px 0;
+    color: #555;
+}
+
+.book-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #77aaff;
+}
+
+/* Special Offers Section */
+.special-offers p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* About Developer Section */
+.about-developer .developer-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.developer-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #77aaff;
+}
+
+.developer-details h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.developer-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.developer-details ul li {
+    margin-bottom: 5px;
+}
+
+/* Book Selection Page */
+.selection-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.selection-area label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.selection-area select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.selection-area button {
+    margin-top: 0; /* Override default button margin */
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Cart Display Page */
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+#cart-items li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+.empty-cart-message {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
+
+.remove-from-cart-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.3s ease;
+}
+
+.remove-from-cart-btn:hover {
+    background: #c0392b;
+}
+
+.cart-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.order-summary {
+    background: #eef;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-summary h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#ordered-books {
+    list-style: decimal; /* Numbered list for ordered items */
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#ordered-books li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+#ordered-books li:last-child {
+    border-bottom: none;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #007bff;
+    display: block;
+    text-align: right;
+    margin-top: 15px;
+}
+
+
+/* Footer Styles */
+.main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}

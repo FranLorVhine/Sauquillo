@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Our Book Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart-display">
+        <div class="container">
+            <h2>Your Shopping Cart</h2>
+            <ul id="cart-items">
+                <li class="empty-cart-message">Your cart is empty.</li>
+            </ul>
+            <div class="cart-actions">
+                <button id="buy-btn" class="btn">Buy Now</button>
+            </div>
+            <div id="order-summary" class="order-summary" style="display: none;">
+                <h3>Order Summary</h3>
+                <ul id="ordered-books"></ul>
+                <p>Total Price: <span id="total-price"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Online Book Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
